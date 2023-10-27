@@ -1,0 +1,34 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.heart {
+  /* font-size: 3.2rem;  */
+  position: absolute;
+  top: -10vh;
+  animation: fall 3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(105vh);
+  }
+}
