@@ -1,0 +1,47 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  background-color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.btn {
+  border: none;
+  font-size: 1.8rem;
+  padding: 1rem;
+  background-color: rebeccapurple;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:hover {
+  background-color: white;
+  color: rebeccapurple;
+  outline: 2px solid rebeccapurple;
+}
+
+.btn:active {
+  transform: translate(2px, 2px);
+}
