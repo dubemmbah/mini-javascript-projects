@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="script.js" defer></script>
+    <title>ToDo App</title>
+  </head>
+  <body>
+    <h1>todo</h1>
+    <form id="form" class="form">
+      <input
+        type="text"
+        id="input"
+        class="input"
+        placeholder="What do you want to do?"
+        autocomplete="off"
+      />
+      <ul class="todos" id="todos"></ul>
+    </form>
+    <small
+      >Left click to toggle complete <br />
+      Right click to remove the todo
+    </small>
+  </body>
+</html>
