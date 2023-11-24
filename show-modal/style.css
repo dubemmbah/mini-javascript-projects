@@ -1,0 +1,103 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  background-color: #ddd;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(to top right, #075985, #38bdf8);
+  position: relative;
+  line-height: 1.5;
+}
+
+.show-modal {
+  padding: 1.75rem 3.5rem;
+  margin: 5rem 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+  border: none;
+  background-color: white;
+  border-radius: 10rem;
+  color: #333;
+  cursor: pointer;
+}
+
+.show-modal:focus,
+.show-modal:active {
+  outline: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 6rem;
+  width: 70%;
+  border-radius: 6px;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.close-modal {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  border: none;
+  font-size: 3rem;
+  background: none;
+  color: #333;
+  cursor: pointer;
+}
+
+h1 {
+  margin-bottom: 2rem;
+}
+
+p {
+  font-size: 1.8rem;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+@media (max-width: 46.875em) {
+  .show-modal {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 42.5em) {
+  .show-modal {
+    font-size: 1.65rem;
+    margin: 5rem 1rem;
+    padding: 1.5rem 3rem;
+  }
+}
