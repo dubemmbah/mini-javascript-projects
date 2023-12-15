@@ -30,7 +30,31 @@
       <button class="btn btn--new">🔁 New game</button>
       <button class="btn btn--roll">🎲 Roll dice</button>
       <button class="btn btn--hold">📥 Hold</button>
+      <button class="btn btn--rules">⟠ Rules</button>
     </main>
+
+    <div class="rules">
+      <h3 class="heading">Rules of the game</h3>
+      <ul class="rules-list">
+        <li class="rule">
+          Click the roll dice button to roll a dice between 1 and 6 (inclusive)
+        </li>
+        <li class="rule">
+          If a player rolls a one, the button automatically switches to the next
+          player and all accumulated points are lost
+        </li>
+        <li class="rule">
+          Click on the hold button to accumulate points and add it to total
+          score
+        </li>
+        <li class="rule">
+          To reset the game or start afresh, click on the new game button
+        </li>
+        <li class="rule">
+          First player to accumulate a total of 50 points or above wins the game
+        </li>
+      </ul>
+    </div>
     <p class="winning--point"></p>
   </body>
 </html>
